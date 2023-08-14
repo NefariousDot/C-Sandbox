@@ -12,7 +12,7 @@ int main()
     printf("System will automatically change row to 18\n");
     printf("**********************************\n");
 
-    if((row>18) || (row=0))
+    if((row>18) || (row==0))
     row = 18;
     
     printf("\nPrinting the sequence\n");
