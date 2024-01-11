@@ -8,12 +8,13 @@
  **************************************************/
 
 #include<stdio.h>
+#define MAX 100
 
 /**************************************************
  * Function name	: inputArray()
  * User input for the array elements 
  **************************************************/
-void inputArray(int arry[][10],int row, int coln){
+void inputArray(int arry[][MAX],int row, int coln){
     int i,j;
     printf("\n\n***************************************************\n");
     printf("* CREATING ARRAY ELEMENTS\n");
@@ -32,7 +33,7 @@ void inputArray(int arry[][10],int row, int coln){
  * Function name	: dispArray()
  * User input for the array elements 
  **************************************************/
-void dispArray(int arry[][10],int row, int coln){
+void dispArray(int arry[][MAX],int row, int coln){
     int i,j;
     printf("\n\n***************************************************\n");
     printf("* ARRAY ELEMENTS");
@@ -50,33 +51,33 @@ void dispArray(int arry[][10],int row, int coln){
  * Function name	: arrayMul()
  * Calculating ROW SUM 
  **************************************************/
-/*void arrayMul(int arry1[][10], int arry2[][10],int row,int row1, int coln){
+void arrayMul(int arry1[][MAX], int arry2[][MAX],int row,int row1, int coln){
+    printf("\n\n***************************************************\n");
+    printf("* MULTIPLIED ARRAY ELEMENTS");
+    printf("\n***************************************************\n");
     int i,j,k,sum=0;
     int matrixC[row][coln];
     for(i=0;i<row;i++){
         for(j=0;j<coln;j++){
             for(k=0;k<row1;k++){
                 sum+=arry1[i][k]*arry2[k][j];
-                printf("Sum of %dx%dx%d is : %d\n",i,j,k,sum);
             }
             matrixC[i][j]=sum;
+            printf("| %d ",sum);
             sum=0;            
         }
+        printf(" |\n");
     }
 
-    printf("\n#########################\n");
-    printf("MULTIPLIED MATRIX\n");
-    dispArray(matrixC,row,coln);
-
 }
-*/
+
 
 /**************************************************
  * Function name	: main()
  **************************************************/
 
 int main(){
-    /*int r1,c1,r2,c2;
+    int r1,c1,r2,c2;
     printf("Enter the number of rows and columns of FIRST MATRIX\n");
     printf("Row ?: ");
     scanf("%d",&r1);
@@ -93,20 +94,23 @@ int main(){
         printf("\nERROR : MULTIPLICATION CANNOT BE PERFORMED\n");
         printf("Column # of FIRST MATRIX should match with row # of SECOND MATRIX\n");
         return 0;
-    } */
+    } 
 
-    //int matrixA[r1][c1],matrixB[r2][c2];
+    int matrixA[MAX][MAX],matrixB[MAX][MAX];
 
-    int matrixA[2][3] = {{1,2,3},{1,2,1}};
-    int matrixB[3][2]={{1,2},{1,2},{3,1}};
+    //int matrixA[2][3] = {{1,2,3},{1,2,1}};
+    //int matrixB[3][2]={{1,2},{1,2},{3,1}};
     
-    //inputArray(matrixA,r1,c1);  
-    //printf("\n");   
-    //inputArray(matrixB,r2,c2); 
+    inputArray(matrixA,r1,c1);  
+    //printf("\n"); 
+    dispArray(matrixA,r1,c1);
+    inputArray(matrixB,r2,c2); 
+    dispArray(matrixB,r2,c2);
     
-    //arrayMul(matrixA,matrixB,r1,r2,c1);
+    arrayMul(matrixA,matrixB,r1,r2,c2);
+    
 
-    int i,j,k,sum=0;
+    /*int i,j,k,sum=0;
     int matrixC[2][2];
     for(i=0;i<2;i++){
         for(j=0;j<2;j++){
@@ -119,7 +123,7 @@ int main(){
             matrixC[i][j]=sum;
             sum=0;            
         }
-    }
+    }*/
 
     return 0;
 }
