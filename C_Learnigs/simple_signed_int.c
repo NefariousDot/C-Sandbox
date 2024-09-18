@@ -1,3 +1,8 @@
+/******************************************************************************
+ * In this program, you're trying to add an unsigned integer (i) and 
+ * a signed integer (j), and print the result as an unsigned integer
+ ******************************************************************************/
+
 #include <stdio.h>
 int main()
 {

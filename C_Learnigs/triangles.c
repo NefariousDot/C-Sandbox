@@ -1,3 +1,10 @@
+/******************************************************************************
+ * This program allows the user to input a number of rows and then prints five 
+ * different patterns using asterisks (*) and numbers. 
+ * The patterns include left-aligned and right-aligned asterisk triangles, 
+ * as well as a Floyd's triangle (a triangular array of natural numbers).
+ ******************************************************************************/
+
 #include <stdio.h>
 #include <string.h>
 

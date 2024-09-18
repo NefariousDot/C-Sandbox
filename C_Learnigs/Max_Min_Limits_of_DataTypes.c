@@ -1,3 +1,9 @@
+/******************************************************************************
+ * This program demonstrates the size (in bytes) and value range of different data types in C. 
+ * It uses the sizeof() function to print the size of various data types and predefined constants 
+ * from the limits.h library to show the minimum and maximum values for signed and unsigned types.
+ ******************************************************************************/
+
 #include <stdio.h>
 #include <limits.h>
 int main()

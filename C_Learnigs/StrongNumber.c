@@ -1,3 +1,10 @@
+/******************************************************************************
+ * This program checks whether a given number is a Strong number or not.
+ * A Strong number is a number for which the sum of the factorials of its digits equals the number itself.
+ * 
+ * For example, 145 is a Strong number because 1! + 4! + 5! = 1 + 24 + 120 = 145.
+ ******************************************************************************/
+
 #include <stdio.h>
 #include <stdbool.h>
 

@@ -1,3 +1,16 @@
+/******************************************************************************
+ * This program generates a pyramid of asterisks based on the number of rows provided by the user.
+ * The pyramid is center-aligned and grows in size with each additional row.
+ * 
+ * Example Output
+ * Enter the number of rows: 5
+ *     *
+ *    ***
+ *   *****
+ *  *******
+ * *********
+ ******************************************************************************/
+
 #include <stdio.h>
 
 int main() {

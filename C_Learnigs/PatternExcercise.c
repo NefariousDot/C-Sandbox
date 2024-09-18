@@ -1,3 +1,11 @@
+/******************************************************************************
+ * This program generates a pattern of characters based on the user-specified number of rows. 
+ * The number of rows is restricted to a maximum of 18. 
+ * If the user inputs a number outside this range, it is automatically adjusted to 18. 
+ * The program prints rows where each row contains a sequence of characters from an array, 
+ * prefixed by the row number.
+ ******************************************************************************/
+
 #include <stdio.h>
 int main()
 {

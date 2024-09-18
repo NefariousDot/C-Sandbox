@@ -1,3 +1,11 @@
+/******************************************************************************
+ * The program demonstrates the use of structures to organize related data and 
+ * uses functions for reading and printing the item details.
+ * 
+ * This program allows users to enter details for multiple items such as item name, 
+ * quantity, price, and calculates the total amount for each item
+ ******************************************************************************/
+
 #include <stdio.h>
 #include <string.h>
 

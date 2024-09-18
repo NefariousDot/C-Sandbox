@@ -1,3 +1,8 @@
+/******************************************************************************
+ * This program checks whether a given string is a palindrome. A palindrome is a word, 
+ * phrase, or sequence that reads the same forwards as it does backward (e.g., "madam" or "racecar").
+ ******************************************************************************/
+
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>

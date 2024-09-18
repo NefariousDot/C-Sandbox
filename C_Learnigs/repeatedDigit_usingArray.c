@@ -1,3 +1,7 @@
+/******************************************************************************
+ * This code checks for repeated digits in a positive integer input by the user. 
+ ******************************************************************************/
+
 #include <stdio.h>
 
 void isRepeated(int num){

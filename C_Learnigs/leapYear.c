@@ -1,3 +1,9 @@
+/******************************************************************************
+ * This program checks whether a given year is a leap year or not. 
+ * A leap year is a year that is evenly divisible by 4, but if it's also divisible by 100, 
+ * it must be divisible by 400 to be considered a leap year.
+ ******************************************************************************/
+
 #include <stdio.h>
 int main()
 {

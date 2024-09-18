@@ -1,3 +1,9 @@
+/******************************************************************************
+ * This program finds the minimum and maximum values from an integer array using a function 
+ * that takes the array and its length as input. The function returns the results through 
+ * pointer arguments for min and max.
+ ******************************************************************************/
+
 #include <stdio.h>
 void minMax(int arr[],int len,int *min, int *max){
     *min = *max = arr[0];
