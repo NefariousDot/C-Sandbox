@@ -46,6 +46,43 @@ void decimalToHexa(int deci){
     displayConversion(i);
 }
 
+int binaryToDecimal(int binNumber){
+    int i=1,rem, decimalValue=0;
+    while(binNumber){
+        rem = binNumber % 10;
+        decimalValue += rem * i  ;
+        binNumber /= 10;
+        i *= 2;
+    }
+    return decimalValue;
+}
+
+int octalToDecimal(int octaNumber){
+    int i=1,rem, decimalValue=0;
+    while(octaNumber){
+        rem = octaNumber % 10;
+        decimalValue += rem * i  ;
+        octaNumber /= 10;
+        i *= 8;
+    }
+    return decimalValue;
+}
+
+int hexaToDecimal(int hexaNumber){
+    // make sure while getting the value for hexaNumber,
+    // USE "%X" as FORMATE SPECIFIER 
+    int i=1,rem, decimalValue=0;
+    while(hexaNumber){
+        rem = hexaNumber % 16; // Correcting to get hex digits (0-15)
+        decimalValue += rem * i  ;
+        hexaNumber /= 16;
+        i *= 16;
+    }
+    return decimalValue;
+}
+
+
+
 
 
 int main(){
