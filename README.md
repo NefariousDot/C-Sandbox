@@ -31,4 +31,5 @@ Available Programs:
 22. Switch Case Sample
 23. Strong Number
 24. Floyd's Triangle
+25. Number conversion (decimal to binary/octal/hexadecimal and vice versa)
 ```
