@@ -6,13 +6,15 @@ All the learning couse excersie files will be commited in this repo
 
 Available Programs:
 ```
-1 Challenge - Flexible Array Members 
-2. Challenge - Complex Numbers
-3. Challenge - Bit Masking
-4. Challenge - Bit Fields
-5. Challenge - Variadic C Functions
-6. Challenge - Recursion 1
-7. Challenge - Recursion 2
-8. Challenge - Macros
+01 Challenge - Flexible Array Members 
+02. Challenge - Complex Numbers
+03. Challenge - Bit Masking
+04. Challenge - Bit Fields
+05. Challenge - Variadic C Functions
+06. Challenge - Recursion 1
+07. Challenge - Recursion 2
+08. Challenge - Macros
+09. Various String Functions - Included examples of string functions such as strrchr(), strstr(), strtok()
+10
 
 ```
