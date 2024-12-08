@@ -14,6 +14,13 @@ using the power function from math.h (pow(I,2))
 #include <math.h>
 #include <complex.h>
 
+#ifdef __STDC_NO_COMPLEX__
+    #define COMPLEX_SUPPORT_MESSAGE "COMPLEX ARITHMETIC NOT SUPPORTED\n"
+#else
+    #define COMPLEX_SUPPORT_MESSAGE "COMPLEX ARITHMETIC IS SUPPORTED\n"
+#endif
+
+
 int readComplexNumber(double complex *num){
     double real,imaginary;
     printf("***************************************************\n");
@@ -38,6 +45,8 @@ void displayComplexNumber(double complex num){
 }
 
 int main(){
+
+    printf(COMPLEX_SUPPORT_MESSAGE);
 
     double complex num1; 
     double complex *ptr = &num1;
