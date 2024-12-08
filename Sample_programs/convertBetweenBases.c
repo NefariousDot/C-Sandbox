@@ -82,9 +82,6 @@ int hexaToDecimal(int hexaNumber){
 }
 
 
-
-
-
 int main(){
     int decimalNumber;
     printf("Enter a Decimal Number : ");
@@ -93,5 +90,18 @@ int main(){
     decimalToBinary(decimalNumber);
     decimalToOctal(decimalNumber);
     decimalToHexa(decimalNumber);
+    /**
+     * binaryToDecimal(); COMPLETED
+     * octalToDecimal(); COMPLETED
+     * hexaToDecimal(); COMPLETED
+     * 
+     * REMAINING TO BE COMPLETED
+     *  binary to octal
+     *  binary to hexa
+     *  octal to binary
+     *  octal to hexa
+     *  hexa to binary
+     *  hexa to octal
+     */
     
 }
