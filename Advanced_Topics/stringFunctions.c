@@ -40,7 +40,7 @@ int main(){
     const char *delim = ",";
     result = strtok(str,delim);
     while(result){
-        printf("TOKEN  : %s\n"result);
+        printf("TOKEN  : %s\n",result);
         result = strtok(NULL,delim);
     }
 
